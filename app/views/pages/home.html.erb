@@ -1,0 +1,40 @@
+<%= form_tag("/", :method => "post", :multipart => true) do %>
+    <%= select("page", "recitator", @recitators.collect {|recitator| [recitator.name.capitalize, recitator.id] },
+               {:include_blank => "-Select the Rectiator-", :selected =>   @recitator_selected}) %>
+
+    <%= select("page", "surah", @surahs.collect {|surah| [surah.name, surah.id] }, {:include_blank => "-Select the Surah-", :selected =>   @surah_selected}) %>
+
+    <%= submit_tag("Submit") %>
+<% end %>
+
+<% if !@surah_content.nil? %>
+    <% if user_signed_in? %>
+        <% if @surahConnu %>
+            <%= form_tag("/linkUsersSurahs/destroy", :method => "post", :multipart => true,:id =>"frm_relation_surah_user", :remote => true) do %>
+                <%= submit_tag "I don't know this surah", :id=>"submit_surah_know" %>
+                <%= hidden_field_tag 'surah_id', @surah_selected  %>
+            <% end %>
+
+        <% else
+             #Si la sourate n'est pas connu, on doit proposer à l'user de dire qu'il l'a connait
+        %>
+            <%= form_tag("/linkUsersSurahs/create", :method => "post", :multipart => true,:id =>"frm_relation_surah_user", :remote => true) do %>
+                <%= submit_tag "I know it !", :id=>"submit_surah_know" %>
+                <%= hidden_field_tag 'surah_id', @surah_selected  %>
+            <% end %>
+        <% end %>
+    <% else %>
+        <%= link_to "I know it ?", new_user_session_path %>
+    <% end %>
+
+
+
+    <ul>
+        <% @surah_content.each do |elem | %>
+            <li><%= elem.child %></li>
+        <% end %>
+    </ul>
+<% else %>
+    <p>Select a surah</p>
+<% end %>
+

@@ -1,0 +1,37 @@
+<%= form_for(@recitator) do |f| %>
+  <% if @recitator.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@recitator.errors.count, "error") %> prohibited this recitator from being saved:</h2>
+
+      <ul>
+      <% @recitator.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <select id="surahs" name="recitator[surah_ids][]" multiple>
+
+      <% @surahs.each do | surah| %>
+          <% if @surahs_array_available.include? surah.id %>
+              <option selected="selected" value="<%=surah.id %>"><%= surah.name %></option>
+              <% else %>
+              <option value="<%=surah.id %>"><%= surah.name %></option>
+          <% end %>
+
+      <% end %>
+    </select>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

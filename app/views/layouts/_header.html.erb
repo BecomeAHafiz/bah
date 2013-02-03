@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<% if user_signed_in? %>
+        <p>
+            Welcome <b><%=  current_user.email %> !</b> <%= link_to 'Sign out',
+            destroy_user_session_path, :method => :delete, :confirm=>'Are you sure?' %>
+        </p>
+<% else %>
+    <p>
+      <%= link_to 'Connect', new_user_session_path %>  or <%= link_to 'Suscribe', new_user_registration_path %>
+    </p>
+<% end %>
+
+<ul>
+  <li><%= link_to 'Home' , root_path %></li>
+  <li><%= link_to 'Recitators' , recitators_path %></li>
+  <li><%= link_to 'Surahs' , surahs_path %></li>
+</ul>

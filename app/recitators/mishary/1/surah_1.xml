@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ayahs>
+	<ayah name='1'>
+		<content lang="ar">  بِسۡمِ ٱللهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ</content>
+		<content lang="Ang">This is the content of the first</content>
+	</ayah>
+	<ayah name='2'>
+		<content lang="ar">ٱلۡحَمۡدُ لِلَّهِ رَبِّ ٱلۡعَـٰلَمِينَ (﻿٢﻿)</content>
+		<content lang="Ang">This is the content of the second</content>
+	</ayah>
+	<ayah name='3'>
+		<content lang="ar">ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ (﻿٣﻿)</content>
+		<content lang="Ang">This is the content of the third</content>
+	</ayah>
+	<ayah name='4'>
+		<content lang="ar">مَـٰلِكِ يَوۡمِ ٱلدِّينِ (﻿٤﻿)</content>
+		<content lang="Ang">This is the content of the third</content>
+	</ayah>
+	<ayah name='5'>
+		<content lang="ar"> إِيَّاكَ نَعۡبُدُ وَإِيَّاكَ نَسۡتَعِينُ (﻿٥﻿)</content>
+		<content lang="Ang">This is the content of the third</content>
+	</ayah>
+	<ayah name='6'>
+		<content lang="ar">ٱهۡدِنَا ٱلصِّرَٲطَ ٱلۡمُسۡتَقِيمَ (﻿٦﻿)</content>
+		<content lang="Ang">This is the content of the third</content>
+	</ayah>
+	<ayah name='7'>
+		<content lang="ar">صِرَٲطَ ٱلَّذِينَ أَنۡعَمۡتَ عَلَيۡهِمۡ غَيۡرِ ٱلۡمَغۡضُوبِ عَلَيۡهِمۡ وَلَا ٱلضَّآلِّينَ (﻿٧﻿)</content>
+		<content lang="Ang">This is the content of the third</content>
+	</ayah>
+</ayahs>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ayahs>
+	<ayah name='1'>
+		<content lang="ar">  بِسۡمِ ٱللهِ ٱلرَّحۡمَـٰنِ ٱلرَّحِيمِ</content>
+		<content lang="Ang">This is the content of the first</content>
+	</ayah>
+	<ayah name='2'>
+		<content lang="ar">قُلۡ هُوَ ٱللَّهُ أَحَدٌ (﻿١﻿)</content>
+		<content lang="Ang">This is the content of the second</content>
+	</ayah>
+	<ayah name='3'>
+		<content lang="ar"> ٱللَّهُ ٱلصَّمَدُ (﻿٢﻿)</content>
+		<content lang="Ang">This is the content of the third</content>
+	</ayah>
+	<ayah name='4'>
+		<content lang="ar"> لَمۡ يَلِدۡ وَلَمۡ يُولَدۡ (﻿٣﻿)</content>
+		<content lang="Ang">This is the content of the third</content>
+	</ayah>
+	<ayah name='5'>
+		<content lang="ar">وَلَمۡ يَكُن لَّهُ ۥ ڪُفُوًا أَحَدٌ (﻿٤﻿)</content>
+		<content lang="Ang">This is the content of the third</content>
+	</ayah>
+</ayahs>

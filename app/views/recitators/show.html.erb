@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @recitator.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @recitator.description %>
+</p>
+
+<p>
+  <b>Surahs available</b>
+  <select  id="surahs_available" name="recitator[surah_ids][]" multiple disabled>
+    <% surahs_unavailable = Array.new() %>
+    <% @surahs.each do | surah| %>
+        <% if @surahs_array_aivalable.include? surah.id %>
+            <option value="<%=surah.id %>"><%= surah.position %> | <%= surah.name %></option>
+            <% else
+               surah_tab = [surah.id,surah.position, surah.name]
+               surahs_unavailable << surah_tab
+            %>
+        <% end %>
+    <% end %>
+  </select>
+</p>
+<p>
+  <b>Surahs unavailable</b>
+  <select  id="surahs_unavailable" name="recitator[surah_ids][]" multiple disabled>
+    <% surahs_unavailable.each do | surah| %>
+            <option value="<%= surah[0] %>"><%= surah[1] %> | <%= surah[2] %></option>
+        <% end %>
+  </select>
+</p>
+
+
+<%= link_to 'Edit', edit_recitator_path(@recitator) %> |
+<%= link_to 'Back', recitators_path %>

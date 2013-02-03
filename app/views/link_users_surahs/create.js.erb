@@ -1,0 +1,6 @@
+$("#submit_surah_know").val("I don't know this surah");
+$("#frm_relation_surah_user").attr("action","/linkUsersSurahs/destroy");
+$("#percentage_quran").css("color","green");
+$("#percentage_quran").html(<%= current_user.percentageSurah %>);
+$("#number_surah").css("color","green");
+$("#number_surah").html(<%= current_user.surahs.size %>);

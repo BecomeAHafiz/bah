@@ -1,0 +1,33 @@
+<%= form_for(@surah) do |f| %>
+  <% if @surah.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@surah.errors.count, "error") %> prohibited this surah from being saved:</h2>
+
+      <ul>
+      <% @surah.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+    <div class="field">
+      <%= f.label :position %><br />
+      <%= f.text_field :position %>
+    </div>
+    <div class="field">
+      <%= f.label :nbAyahs %><br />
+      <%= f.text_field :nbAyahs %>
+    </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

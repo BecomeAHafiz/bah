@@ -1,0 +1,14 @@
+/**
+ * Created with JetBrains RubyMine.
+ * User: adel
+ * Date: 02/02/13
+ * Time: 14:12
+ * To change this template use File | Settings | File Templates.
+ */
+
+$("#submit_surah_know").val("I know it");
+$("#frm_relation_surah_user").attr("action","/linkUsersSurahs/create");
+$("#percentage_quran").css("color","red");
+$("#percentage_quran").html(<%= current_user.percentageSurah %>);
+$("#number_surah").css("color","red");
+$("#number_surah").html(<%= current_user.surahs.size %>);
