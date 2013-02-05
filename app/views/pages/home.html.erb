@@ -1,8 +1,8 @@
 <%= form_tag("/", :method => "post", :multipart => true) do %>
     <%= select("page", "recitator", @recitators.collect {|recitator| [recitator.name.capitalize, recitator.id] },
-               {:include_blank => "-Select the Rectiator-", :selected =>   @recitator_selected}) %>
+               {:selected =>   @recitator_selected}) %>
 
-    <%= select("page", "surah", @surahs.collect {|surah| [surah.name, surah.id] }, {:include_blank => "-Select the Surah-", :selected =>   @surah_selected}) %>
+    <%= select("page", "surah", @surahs.collect {|surah| [surah.name, surah.id] }, { :selected =>   @surah_selected}) %>
 
     <%= submit_tag("Submit") %>
 <% end %>

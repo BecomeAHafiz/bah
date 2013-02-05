@@ -38,6 +38,8 @@ class PagesController < ApplicationController
       if params[:page][:recitator].present?
         recitator = params[:page][:recitator]
       end
+    else
+      recitator = Recitator.first.id
     end
   end
 
