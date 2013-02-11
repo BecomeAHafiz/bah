@@ -1,4 +1,4 @@
-<%= form_tag("/", :method => "post", :multipart => true) do %>
+<%= form_tag("/", :method => "post", :multipart => true, :id => "lstRecitator") do %>
     <%= select("page", "recitator", @recitators.collect {|recitator| [recitator.name.capitalize, recitator.id] },
                {:selected =>   @recitator_selected}) %>
 
@@ -7,7 +7,7 @@
     <%= submit_tag("Submit") %>
 <% end %>
 
-<% if !@surah_content.nil? %>
+<% unless @surah_content.nil? %>
     <% if user_signed_in? %>
         <% if @surahConnu %>
             <%= form_tag("/linkUsersSurahs/destroy", :method => "post", :multipart => true,:id =>"frm_relation_surah_user", :remote => true) do %>
@@ -28,13 +28,28 @@
     <% end %>
 
 
-
-    <ul>
-        <% @surah_content.each do |elem | %>
-            <li><%= elem.child %></li>
-        <% end %>
-    </ul>
-<% else %>
-    <p>Select a surah</p>
+    <div id="surah_content">
+        <ul>
+          <%   compteur = 1
+               @surah_content.each do |elem |
+                    unless compteur == 1 %>
+                      <% if user_signed_in? %>
+                          <% if @ayahConnus.include? (compteur - 1) %>
+                            <span>Salut</span>
+                          <% end %>
+                          <%= form_tag("/linkUsersAyahs/create", :method => "post", :multipart => true,:class =>"frm_relation_ayah_user", :remote => true) do %>
+                              <%= submit_tag "I know it !", :id=>"submit_ayah_know" %>
+                              <%= hidden_field_tag 'surah_id', @surah_selected  %>
+                              <%= hidden_field_tag 'ayah_position', compteur  %>
+                          <% end %>
+                      <% end %>
+                      <li class="text_arab"><%= elem.child %></li>
+                    <%else %>
+                      <li class="text_arab"><%= elem.child %></li>
+                    <% end %>
+                    <% compteur = compteur + 1
+               end %>
+        </ul>
+    </div>
 <% end %>
 

@@ -1,4 +1,6 @@
+
 <% if user_signed_in? %>
+<div id="profil">
     <p>
       You know <span id="percentage_quran"><%= (current_user.percentageSurah)  %></span>% of Quran !
     </p>
@@ -8,4 +10,5 @@
         <li>Surahs :  <span id="number_surah"><%= current_user.surahs.size %></span>/114</li>
       </ul>
     </p>
+</div>
 <% end %>

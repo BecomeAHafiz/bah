@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130129173942) do
+ActiveRecord::Schema.define(:version => 20130210120846) do
 
   create_table "ayahs", :force => true do |t|
     t.integer  "surah_id"
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(:version => 20130129173942) do
     t.datetime "updated_at", :null => false
     t.integer  "position"
   end
+
+  create_table "ayahs_users", :id => false, :force => true do |t|
+    t.integer "ayah_id"
+    t.integer "user_id"
+  end
+
+  add_index "ayahs_users", ["ayah_id", "user_id"], :name => "index_ayahs_users_on_ayah_id_and_user_id"
+  add_index "ayahs_users", ["user_id", "ayah_id"], :name => "index_ayahs_users_on_user_id_and_ayah_id"
 
   create_table "recitators", :force => true do |t|
     t.string   "name"

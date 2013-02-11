@@ -9,14 +9,22 @@ class PagesController < ApplicationController
       @surah_selected = choiceSurah
       @surah_content = nil
       @surahConnu = nil
-      if !@surah_selected.nil?
-        @surah_content = loadSurah(Surah.find(@surah_selected).position)
-        if user_signed_in?
-          @surahConnu = current_user.surahConnu? @surah_selected
-        end
+      @ayahConnus = Array.new
+
+      # Si pas de sélection, on sélectionne d'office la premiere sourate
+      if @surah_selected.nil?
+          @surah_selected = @surahs.first.id
       end
 
+      sourate_obj = Surah.find(@surah_selected)
 
+      @surah_content = loadSurah(sourate_obj.position)
+
+      if user_signed_in?
+        @ayahConnus = current_user.getTabOfPosition @surah_selected
+        @surahConnu = current_user.surahConnu? @surah_selected
+        #@ayahConnus =
+      end
   end
 
   # Récupère tous les noms des dossiers dans le dossier recitators. Autrement dit, récupère tous les récitateurs

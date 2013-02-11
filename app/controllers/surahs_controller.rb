@@ -46,6 +46,7 @@ class SurahsController < ApplicationController
 
     respond_to do |format|
       if @surah.save
+        @surah.save_ayah
         format.html { redirect_to @surah, notice: 'Surah was successfully created.' }
         format.json { render json: @surah, status: :created, location: @surah }
       else

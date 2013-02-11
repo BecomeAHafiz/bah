@@ -1,0 +1,2 @@
+module LinkUsersAyahsHelper
+end

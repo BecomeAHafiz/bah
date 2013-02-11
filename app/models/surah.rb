@@ -10,4 +10,13 @@ class Surah < ActiveRecord::Base
   def nbAyahsTotal
     Surah.sum(:nbAyahs)
   end
+
+  def save_ayah
+    for i in 1..self.nbAyahs do
+      ayah = Ayah.new :position => i
+      ayah.surah = self
+      ayah.save!
+    end
+  end
+
 end

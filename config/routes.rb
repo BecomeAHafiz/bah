@@ -8,6 +8,9 @@ Bah::Application.routes.draw do
   post "linkUsersSurahs/create"
   post "linkUsersSurahs/destroy"
 
+  post "linkUsersAyahs/destroy"
+  post "linkUsersAyahs/create"
+
   root :to => 'pages#home'
 
   resources :recitators
