@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23aeedb3-95a3-49c3-93f5-6503cec45ce1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bah.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +35,7 @@
     <file path="/surah_utilities.rb" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360793177029" ignored="false" />
     <file path="/a.dummy" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360781718590" ignored="false" />
     <file path="/application.rb" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360782081955" ignored="false" />
-    <file path="/Gemfile" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360963516640" ignored="false" />
+    <file path="/Gemfile" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360965539422" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +55,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="14" selection-start="669" selection-end="669" vertical-scroll-proportion="0.8489209">
+            <state line="35" column="10" selection-start="665" selection-end="665" vertical-scroll-proportion="0.6234234">
               <folding />
             </state>
           </provider>
@@ -60,7 +64,7 @@
       <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="37" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
+            <state line="34" column="21" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -106,7 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/link_users_surahs_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130213163034_create_surahs.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130213165748_create_surahs_users_table.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130213173957_create_surahs.rb" />
@@ -121,6 +124,7 @@
         <option value="$PROJECT_DIR$/app/models/surah.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
@@ -741,11 +745,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278867" sideWeight="0.4764957" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29754272" sideWeight="0.23177366" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33119658" sideWeight="0.63656145" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33119658" sideWeight="0.63616556" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2850925" sideWeight="0.4594017" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25320512" sideWeight="0.33333334" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36343852" sideWeight="0.4764957" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36343852" sideWeight="0.51976496" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3638344" sideWeight="0.4764957" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3638344" sideWeight="0.51976496" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25490198" sideWeight="0.48450854" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -923,14 +927,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="37" selection-start="714" selection-end="714" vertical-scroll-proportion="0.0">
+        <state line="34" column="21" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="14" selection-start="669" selection-end="669" vertical-scroll-proportion="0.8489209">
+        <state line="35" column="10" selection-start="665" selection-end="665" vertical-scroll-proportion="0.6234234">
           <folding />
         </state>
       </provider>
