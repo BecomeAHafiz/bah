@@ -17,8 +17,6 @@ class RecitatorsController < ApplicationController
   # GET /recitators/1.json
   def show
     @recitator = Recitator.find(params[:id])
-    @surahs = Surah.order("position asc")
-    @surahs_array_aivalable = @recitator.surah_ids
 
     respond_to do |format|
       format.html # show.html.erb

@@ -2,9 +2,9 @@ class CreateSurahs < ActiveRecord::Migration
   def change
     create_table :surahs do |t|
       t.string :name
-      t.text :description
-
-      t.timestamps
+      t.integer :surahId
+      t.integer :ayahId
+      t.text :ayahText
     end
   end
 end

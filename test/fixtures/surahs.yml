@@ -2,8 +2,12 @@
 
 one:
   name: MyString
-  description: MyText
+  surahId: 1
+  ayahId: 1
+  ayahText: 
 
 two:
   name: MyString
-  description: MyText
+  surahId: 1
+  ayahId: 1
+  ayahText: 

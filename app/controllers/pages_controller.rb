@@ -1,30 +1,6 @@
 class PagesController < ApplicationController
   def home
-  	#Declaration de variables
-      @recitators = Recitator.order("name asc")
-      @surahs = Surah.order("position asc")
-
-  	#_______________________________________________________
-      @recitator_selected  = choiceRecitator
-      @surah_selected = choiceSurah
-      @surah_content = nil
-      @surahConnu = nil
-      @ayahConnus = Array.new
-
-      # Si pas de sélection, on sélectionne d'office la premiere sourate
-      if @surah_selected.nil?
-          @surah_selected = @surahs.first.id
-      end
-
-      sourate_obj = Surah.find(@surah_selected)
-
-      @surah_content = loadSurah(sourate_obj.position)
-
-      if user_signed_in?
-        @ayahConnus = current_user.getTabOfPosition @surah_selected
-        @surahConnu = current_user.surahConnu? @surah_selected
-        #@ayahConnus =
-      end
+    @sourates = Surah_utilities::Surah_mod.getAyahs 2
   end
 
   # Récupère tous les noms des dossiers dans le dossier recitators. Autrement dit, récupère tous les récitateurs
