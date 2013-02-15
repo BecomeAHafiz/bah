@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23aeedb3-95a3-49c3-93f5-6503cec45ce1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/surah_utilities.rb" />
-      <change type="DELETED" beforePath="C:\Users\adel\bah\app\controllers\link_users_ayahs_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\adel\bah\app\controllers\link_users_surahs_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\adel\bah\app\recitators\mishary\1\1.mp3" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\adel\bah\db\migrate\20130119235843_create_surahs.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\adel\bah\db\migrate\20130127210236_create_ayahs.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\adel\bah\db\migrate\20130128222355_add_position_to_ayah.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\adel\bah\db\migrate\20130128222830_add_nbayah_to_surah.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\adel\bah\db\migrate\20130128224629_rename_nbayah_to_nb_ayahs.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\adel\bah\db\migrate\20130129173942_create_surahs_users_table.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\adel\bah\db\migrate\20130210120846_create_ayahs_users_table.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130213173957_create_surahs.rb" afterPath="$PROJECT_DIR$/db/migrate/20130213173957_create_surahs.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_profil_infos.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_profil_infos.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/pages/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/pages_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/recitators_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/recitators_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/surah.rb" afterPath="$PROJECT_DIR$/app/models/surah.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/surahs.yml" afterPath="$PROJECT_DIR$/test/fixtures/surahs.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/surahs_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/surahs_helper.rb" />
@@ -30,7 +14,7 @@
     </list>
     <ignored path="bah.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360948474040" ignored="false" />
+    <file path="/Dummy.txt" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360963493451" ignored="false" />
     <file path="/recitator.rb" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360177885066" ignored="false" />
     <file path="/Ruby Console" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360824781873" ignored="false" />
     <file path="/a.rxml" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360438260059" ignored="false" />
@@ -55,6 +39,7 @@
     <file path="/surah_utilities.rb" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360793177029" ignored="false" />
     <file path="/a.dummy" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360781718590" ignored="false" />
     <file path="/application.rb" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360782081955" ignored="false" />
+    <file path="/Gemfile" changelist="23aeedb3-95a3-49c3-93f5-6503cec45ce1" time="1360963516640" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +55,17 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="10" selection-start="665" selection-end="665" vertical-scroll-proportion="0.55230594">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -100,10 +95,10 @@
     <setting file="file://$PROJECT_DIR$/app/models/ayah.rb" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/models/recitator.rb" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/views/recitators/show.html.erb" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/models/user.rb" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/app/views/recitators/_form.html.erb" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/models/surah.rb" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/views/recitators/_form.html.erb" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/app/models/user.rb" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/views/pages/home.html.erb" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" root2="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/app/controllers/recitators_controller.rb" root0="SKIP_INSPECTION" />
   </component>
@@ -299,15 +294,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="61" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="67" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="61" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="61" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="296" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="452" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="296" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="675" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="452" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="73" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="67" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -321,8 +316,8 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="options.searchVisible" value="true" />
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -670,15 +665,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Rake.script" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="2" class="java.lang.String" itemvalue="Rails.Production: bah" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Development: bah" />
-      <item index="4" class="java.lang.String" itemvalue="IRB console.IRB console" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="6" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.surahs_controller_test" />
-      <item index="7" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.pages_controller_test" />
-      <item index="8" class="java.lang.String" itemvalue="IRB console.Rails console: bah" />
+      <item index="0" class="java.lang.String" itemvalue="IRB console.IRB console" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.surahs_controller_test" />
+      <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.pages_controller_test" />
+      <item index="4" class="java.lang.String" itemvalue="IRB console.Rails console: bah" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.script" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="7" class="java.lang.String" itemvalue="Rails.Production: bah" />
+      <item index="8" class="java.lang.String" itemvalue="Rails.Development: bah" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -738,14 +733,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="35" width="1930" height="1050" extended-state="7" />
-    <editor active="false" />
+    <frame x="-5" y="35" width="1930" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.48290598" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278867" sideWeight="0.4764957" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29754272" sideWeight="0.23177366" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31997862" sideWeight="0.6354733" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32371795" sideWeight="0.6354733" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2850925" sideWeight="0.4594017" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25320512" sideWeight="0.33333334" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39542484" sideWeight="0.4764957" order="8" side_tool="true" content_ui="tabs" />
@@ -880,58 +875,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_profil_infos.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="51" selection-end="51" vertical-scroll-proportion="0.04883721">
-          <folding />
-        </state>
+        <state line="2" column="2" selection-start="51" selection-end="51" vertical-scroll-proportion="0.04883721" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="32" vertical-scroll-proportion="-0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="32" vertical-scroll-proportion="-0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="73" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="29" column="73" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/boot.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="62" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="19" column="62" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/environment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -941,16 +920,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/lib/surah_utilities.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="28" selection-start="488" selection-end="488" vertical-scroll-proportion="0.2719101">
+        <state line="22" column="32" selection-start="430" selection-end="430" vertical-scroll-proportion="0.51910114">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/surah_utilities.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="32" selection-start="430" selection-end="430" vertical-scroll-proportion="0.51910114">
+        <state line="35" column="10" selection-start="665" selection-end="665" vertical-scroll-proportion="0.55230594">
           <folding />
         </state>
       </provider>
