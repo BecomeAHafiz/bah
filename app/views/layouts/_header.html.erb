@@ -1,4 +1,15 @@
 <p id="notice"><%= notice %></p>
 <div id="header">
 
+
+
+<%= form_tag("/", :method => "post", :multipart => true, :id => "lstSurahs") do %>
+    <% cpt = 1.to_i %>
+    <% @sourates.each do |sourate| %>
+
+       <% cpt = cpt + 1 %>
+    <% end %>
+    <%= select("page", "surah", @sourates.collect {|surah_name, surah_id|[surah_name,surah_id] }, { :selected =>   @surah_select}) %>
+    <%= submit_tag("Submit") %>
+<% end %>
 </div>

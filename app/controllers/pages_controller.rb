@@ -1,6 +1,10 @@
 class PagesController < ApplicationController
   def home
-    @sourates = Surah_utilities::Surah_mod.getAyahs 2
+
+    @surah_select = choiceSurah
+    @ayahs = Surah_utilities::Surah_mod.getAyahs  @surah_select
+    @sourates = Surah_utilities::Surah_mod.getNameSurah
+
   end
 
   # Récupère tous les noms des dossiers dans le dossier recitators. Autrement dit, récupère tous les récitateurs
@@ -29,7 +33,7 @@ class PagesController < ApplicationController
 
   # Récupère le paramètre de la sourate si il existe
   def choiceSurah
-    surah = nil
+    surah = 1
     if params[:page].present?
       if params[:page][:surah].present?
         surah = params[:page][:surah]

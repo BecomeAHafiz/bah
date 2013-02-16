@@ -2,16 +2,18 @@ module Surah_utilities
 
   class Surah_mod
 
+
+    # Retourne les sourates.
     def self.getNameSurah
+      cpt = 1.to_i
+
       tab = Surah.order("surahId").group(:name).count(:all)
-      retour = []
-      tab.each do |key, value|
-        retour << key
+      retour = Hash.new
+      tab.each do |nom_surah, value |
+        retour[nom_surah] = cpt
+        cpt = cpt + 1
       end
-
       retour
-
-
     end
 
 
