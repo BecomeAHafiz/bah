@@ -2,8 +2,8 @@ class PagesController < ApplicationController
   def home
 
     @surah_select = choiceSurah
-    @ayahs = Surah_utilities::Surah_mod.getAyahs  @surah_select
-    @sourates = Surah_utilities::Surah_mod.getNameSurah
+    @ayahs = Surah.getAyahs  @surah_select
+    @sourates = Surah.getNameSurah
 
   end
 

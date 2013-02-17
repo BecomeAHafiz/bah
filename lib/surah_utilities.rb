@@ -4,30 +4,12 @@ module Surah_utilities
 
 
     # Retourne les sourates.
-    def self.getNameSurah
-      cpt = 1.to_i
-
-      tab = Surah.order("surah_id").group(:name).count(:all)
-      retour = Hash.new
-      tab.each do |nom_surah, value |
-        retour[nom_surah] = cpt
-        cpt = cpt + 1
-      end
-      retour
-    end
 
 
-    #Retourne les versets en fonctions de la sourate donnée en paramètre
-    def self.getAyahs(surah_id)
-      tab = Surah.where(:surah_id => surah_id)
-      retour = []
 
-      tab.each do |ayah|
-        retour << ayah
-      end
-      retour
 
-    end
+
+
   end
 
 end
