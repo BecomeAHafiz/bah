@@ -7,7 +7,7 @@ module Surah_utilities
     def self.getNameSurah
       cpt = 1.to_i
 
-      tab = Surah.order("surahId").group(:name).count(:all)
+      tab = Surah.order("surah_id").group(:name).count(:all)
       retour = Hash.new
       tab.each do |nom_surah, value |
         retour[nom_surah] = cpt
@@ -19,7 +19,7 @@ module Surah_utilities
 
     #Retourne les versets en fonctions de la sourate donnée en paramètre
     def self.getAyahs(surah_id)
-      tab = Surah.where(:surahId => surah_id)
+      tab = Surah.where(:surah_id => surah_id)
       retour = []
 
       tab.each do |ayah|

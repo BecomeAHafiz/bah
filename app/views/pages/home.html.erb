@@ -1,9 +1,9 @@
 <% @ayahs.each do |surah| %>
-    <% unless surah.ayahId == 1 %>
-        <%= surah.ayahText %> <span><%= surah.ayahId %></span><br />
+    <% unless surah.ayah_id == 1 %>
+        <%= surah.ayahText %> <span><%= surah.ayah_id %></span><br />
     <% else %>
         <%= surah.ayahText[0..38] %><br />
-        <%= surah.ayahText[39..surah.ayahText.length] %> <span><%= surah.ayahId %></span><br />
+        <%= surah.ayahText[39..surah.ayahText.length] %> <span><%= surah.ayah_id %></span><br />
     <% end %>
 
 <% end %>
