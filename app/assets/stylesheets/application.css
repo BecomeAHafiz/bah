@@ -12,11 +12,23 @@
  *= require_tree .
 */
 
-
+/*
 #header{
+}
+
+#header .block{
 
 }
 
 #profil{
 
 }
+
+.ayah_block
+{
+    border: 1px solid black;
+    margin-bottom: 20px;
+    background-color: #eee;
+}
+*/
+

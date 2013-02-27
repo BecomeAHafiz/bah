@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
+  revision: 85ad702d75abb2338c3be87ab1a970a3ba9a1ab0
+  specs:
+    twitter-bootstrap-rails (2.2.4)
+      actionpack (>= 3.1)
+      execjs
+      railties (>= 3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -142,7 +151,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
-  coffee-rails (~> 3.2.1)
+  coffee-rails (~> 3.2.2)
   devise
   heroku
   jquery-rails
@@ -151,5 +160,6 @@ DEPENDENCIES
   nokogiri
   pg
   rails (= 3.2.1)
-  sass-rails (~> 3.2.3)
+  sass-rails (~> 3.2.4)
+  twitter-bootstrap-rails!
   uglifier (>= 1.0.3)

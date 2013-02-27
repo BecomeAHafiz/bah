@@ -29,6 +29,7 @@ class PagesController < ApplicationController
     else
       recitator = Recitator.first.id
     end
+    recitator
   end
 
   # Récupère le paramètre de la sourate si il existe
@@ -44,6 +45,7 @@ class PagesController < ApplicationController
         surah =   params[:surah_id]
       end
     end
+    surah
   end
 
   # Parse le xml et renvoi le resultat en arabe

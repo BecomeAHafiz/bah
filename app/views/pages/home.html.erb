@@ -1,9 +1,29 @@
-<% @ayahs.each do |surah| %>
-    <% unless surah.ayah_id == 1 %>
-        <%= surah.ayahText %> <span><%= surah.ayah_id %></span><br />
-    <% else %>
-        <%= surah.ayahText[0..38] %><br />
-        <%= surah.ayahText[39..surah.ayahText.length] %> <span><%= surah.ayah_id %></span><br />
-    <% end %>
+<%= form_tag("/", :method => "post", :multipart => true, :id => "lstSurahs") do %>
+    <% cpt = 1.to_i %>
+    <% @sourates.each do |sourate| %>
 
+        <% cpt = cpt + 1 %>
+    <% end %>
+    <%= select("page", "surah", @sourates.collect {|surah_name, surah_id|[surah_name,surah_id] }, { :selected =>   @surah_select}) %>
+    <%= submit_tag "Submit", :class =>"btn", :id =>"submit_surah" %>
 <% end %>
+<div class="text_arab" id="surah_content_ar">
+    <% @ayahs.each do |surah| %>
+        <% unless surah.ayah_id == 1 %>
+          <div class="row-fluid">
+            <div class="ayah_block span12">
+                <%= surah.ayahText %> <span><%= surah.ayah_id %></span><br />
+            </div>
+          </div>
+        <% else
+            #On affiche Bismilah ARahman ARahim, et ensuite la première sourate en dessous #  %>
+            <%= surah.ayahText[0..38] %><br />
+          <div class="row-fluid">
+            <div class="ayah_block span12">
+                <%= surah.ayahText[39..surah.ayahText.length] %> <span><%= surah.ayah_id %></span><br />
+            </div>
+          </div>
+        <% end %>
+
+    <% end %>
+</div>
